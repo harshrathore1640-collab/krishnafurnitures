@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Furniture Udyog | Premium Wooden Furniture Manufacturers & Wholesalers</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        wood: {
+                            50: '#fcf8f3',
+                            100: '#f5ebe0',
+                            200: '#e3d5ca',
+                            300: '#d5bdaf',
+                            700: '#8c6d53',
+                            800: '#6b513c',
+                            900: '#4a3728',
+                            950: '#2d2117'
+                        },
+                        amberGold: {
+                            500: '#d4af37',
+                            600: '#b89728',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        h1, h2, h3, h4, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="bg-wood-50 text-wood-950 antialiased selection:bg-wood-800 selection:text-wood-100">
+
+    <!-- Top Bar -->
+    <div class="bg-wood-900 text-wood-100 text-xs py-2 px-4 sm:px-8 border-b border-wood-800">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <span><i class="fa-solid fa-location-dot text-amberGold-500 mr-1.5"></i> Ajaygarh, Panna, MP, India - 488220</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-clock text-amberGold-500 mr-1.5"></i> Mon - Sat: 9:00 AM - 8:00 PM</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:07805995431" class="hover:text-amberGold-500 transition-colors"><i class="fa-solid fa-phone text-amberGold-500 mr-1.5"></i> 07805995431</a>
+                <a href="https://instagram.com/krishna_furniture_udyog" target="_blank" class="hover:text-amberGold-500 transition-colors"><i class="fa-brands fa-instagram text-amberGold-500 mr-1.5"></i> @krishna_furniture_udyog</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-40 bg-wood-50/95 backdrop-blur-md border-b border-wood-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-11 h-11 rounded-xl bg-wood-900 text-amberGold-500 flex items-center justify-center text-xl font-bold shadow-md border border-amberGold-500/30">
+                    <i class="fa-solid fa-chair"></i>
+                </div>
+                <div>
+                    <span class="text-xl sm:text-2xl font-serif font-bold tracking-tight text-wood-900 block leading-none">Krishna Furniture</span>
+                    <span class="text-xs uppercase tracking-widest text-wood-700 font-semibold mt-1 block">Udyog • Manufacturers & Wholesalers</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-wood-800">
+                <a href="#home" class="hover:text-amberGold-600 transition-colors">Home</a>
+                <a href="#about" class="hover:text-amberGold-600 transition-colors">About Us</a>
+                <a href="#collections" class="hover:text-amberGold-600 transition-colors">Collections</a>
+                <a href="#wholesale" class="hover:text-amberGold-600 transition-colors">Wholesale & B2B</a>
+                <a href="#why-us" class="hover:text-amberGold-600 transition-colors">Why Us</a>
+                <a href="#contact" class="hover:text-amberGold-600 transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA Buttons -->
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="tel:07805995431" class="bg-wood-900 hover:bg-wood-800 text-wood-100 px-5 py-2.5 rounded-xl font-medium text-sm transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-amberGold-500"></i> Call Now
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="lg:hidden text-wood-900 text-2xl focus:outline-none p-2">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-wood-100 border-b border-wood-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#home" class="block py-2 text-wood-900 font-medium border-b border-wood-200">Home</a>
+            <a href="#about" class="block py-2 text-wood-900 font-medium border-b border-wood-200">About Us</a>
+            <a href="#collections" class="block py-2 text-wood-900 font-medium border-b border-wood-200">Collections</a>
+            <a href="#wholesale" class="block py-2 text-wood-900 font-medium border-b border-wood-200">Wholesale & B2B</a>
+            <a href="#why-us" class="block py-2 text-wood-900 font-medium border-b border-wood-200">Why Us</a>
+            <a href="#contact" class="block py-2 text-wood-900 font-medium">Contact</a>
+            <div class="pt-2 flex gap-3">
+                <a href="tel:07805995431" class="flex-1 text-center bg-wood-900 text-wood-100 py-3 rounded-xl font-medium text-sm">
+                    <i class="fa-solid fa-phone text-amberGold-500 mr-2"></i> Call Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-wood-900 text-wood-100 overflow-hidden py-20 lg:py-32">
+        <div class="absolute inset-0 z-0 opacity-30">
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=1920" alt="Luxury Wood Furniture Workshop" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-wood-950 via-wood-900/90 to-transparent z-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-20 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 bg-amberGold-500/20 text-amberGold-500 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider border border-amberGold-500/30">
+                    <i class="fa-solid fa-award"></i> Direct Manufacturers & Wholesalers
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold tracking-tight leading-tight">
+                    Timeless Wooden Elegance, Crafted for Generations.
+                </h1>
+                <p class="text-wood-200 text-base sm:text-lg max-w-2xl font-light">
+                    Welcome to <span class="font-semibold text-white">Krishna Furniture Udyog</span>. Master artisans creating premium solid wood beds, dining sets, luxury seating, and architectural woodwork. Serving retail homes and bulk wholesalers across India.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-4">
+                    <a href="#collections" class="bg-amberGold-500 hover:bg-amberGold-600 text-wood-950 px-8 py-4 rounded-xl font-bold text-sm tracking-wide transition-all shadow-xl hover:translate-y-[-2px] flex items-center gap-2">
+                        Explore Collection <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                    <a href="#wholesale" class="border border-wood-400 hover:border-amberGold-500 hover:text-amberGold-500 text-wood-100 px-8 py-4 rounded-xl font-bold text-sm tracking-wide transition-all flex items-center gap-2">
+                        Wholesale Inquiry <i class="fa-solid fa-handshake"></i>
+                    </a>
+                </div>
+                
+                <div class="grid grid-cols-3 gap-6 pt-8 border-t border-wood-800 mt-8">
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-serif font-bold text-amberGold-500">100%</div>
+                        <div class="text-xs text-wood-300">Solid Premium Wood</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-serif font-bold text-amberGold-500">Bulk & Retail</div>
+                        <div class="text-xs text-wood-300">Direct Pricing</div>
+                    </div>
+                    <div>
+                        <div class="text-2xl sm:text-3xl font-serif font-bold text-amberGold-500">Ajaygarh</div>
+                        <div class="text-xs text-wood-300">Panna, MP Hub</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Image Collage -->
+            <div class="lg:col-span-5 relative hidden sm:block">
+                <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-wood-800/50">
+                    <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&q=80&w=800" alt="Luxury Wooden Interior Furniture" class="w-full h-[420px] object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+                <div class="absolute -bottom-6 -left-6 bg-wood-950/90 backdrop-blur-md p-5 rounded-2xl border border-wood-800 shadow-2xl z-25 max-w-[260px]">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 rounded-xl bg-amberGold-500/20 text-amberGold-500 flex items-center justify-center">
+                            <i class="fa-solid fa-star text-lg"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-wood-300 font-medium">Quality Assured</div>
+                            <div class="text-sm font-bold text-white">Master Craftsmanship</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 lg:py-28 bg-wood-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&q=80&w=600" alt="Woodworking Mastercraft" class="rounded-2xl shadow-lg w-full h-72 object-cover">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&q=80&w=600" alt="Premium Living Room Furniture" class="rounded-2xl shadow-lg w-full h-72 object-cover mt-8">
+                    </div>
+                    <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                        <div class="w-32 h-32 bg-amberGold-500/10 rounded-full blur-2xl"></div>
+                    </div>
+                </div>
+                <div class="lg:col-span-6 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-wood-200 text-wood-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                        <i class="fa-solid fa-tree text-amberGold-600"></i> About Krishna Furniture Udyog
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-wood-950 leading-tight">
+                        Legacy of Fine Woodworking & Wholesale Excellence
+                    </h2>
+                    <p class="text-wood-800 leading-relaxed font-light">
+                        Based in the historic town of Ajaygarh, Panna (Madhya Pradesh), <span class="font-semibold text-wood-950">Krishna Furniture Udyog</span> has grown into a premier manufacturing and wholesale powerhouse. We combine traditional generational woodworking expertise with modern precision machinery to build furniture that stands the test of time.
+                    </p>
+                    <p class="text-wood-800 leading-relaxed font-light">
+                        Whether you are an individual looking to elevate your home décor or a retail showroom / interior contractor searching for reliable bulk wholesale suppliers, we deliver uncompromising quality at direct factory prices.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6 pt-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-wood-900 text-amberGold-500 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-wood-950">Durable Timber</h4>
+                                <p class="text-xs text-wood-700 mt-0.5">Seasoned Sheesham, Teak & Sal woods.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-wood-900 text-amberGold-500 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-tags"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-wood-950">Wholesale Rates</h4>
+                                <p class="text-xs text-wood-700 mt-0.5">Direct from factory floor pricing.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections / Products Section -->
+    <section id="collections" class="py-20 lg:py-28 bg-wood-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 bg-amberGold-500/20 text-amberGold-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider border border-amberGold-500/30">
+                    <i class="fa-solid fa-couch"></i> Our Craftsmanship
+                </div>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-wood-950">
+                    Explore Our Premium Furniture Collections
+                </h2>
+                <p class="text-wood-700 text-base">
+                    Browse through our exquisite catalog of handcrafted wooden beds, dining sets, luxury seating, and architectural woodwork built to perfection.
+                </p>
+
+                <!-- Filter Buttons -->
+                <div id="filter-container" class="flex flex-wrap justify-center gap-2 pt-6">
+                    <button class="filter-btn px-5 py-2 rounded-xl text-sm font-semibold transition-all bg-wood-900 text-wood-100 shadow-md" data-filter="all">All Collections</button>
+                    <button class="filter-btn px-5 py-2 rounded-xl text-sm font-semibold transition-all bg-wood-200 hover:bg-wood-300 text-wood-900" data-filter="beds">Wooden Beds & Double Beds</button>
+                    <button class="filter-btn px-5 py-2 rounded-xl text-sm font-semibold transition-all bg-wood-200 hover:bg-wood-300 text-wood-900" data-filter="dining">Dining Tables</button>
+                    <button class="filter-btn px-5 py-2 rounded-xl text-sm font-semibold transition-all bg-wood-200 hover:bg-wood-300 text-wood-900" data-filter="sofas">Luxury Sofas & Seating</button>
+                    <button class="filter-btn px-5 py-2 rounded-xl text-sm font-semibold transition-all bg-wood-200 hover:bg-wood-300 text-wood-900" data-filter="doors">Doors & Woodwork</button>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div id="product-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Item 1 -->
+                <div class="product-card group bg-wood-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-wood-200 flex flex-col" data-category="beds">
+                    <div class="relative h-64 overflow-hidden bg-wood-200">
+                        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&q=80&w=700" alt="Royal Carved Wooden Double Bed" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-wood-900/80 backdrop-blur-md text-amberGold-500 px-3 py-1 rounded-lg text-xs font-semibold">Beds & Bedroom</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-serif font-bold text-wood-950">Royal Carved Double Bed</h3>
+                            <p class="text-wood-700 text-sm mt-2 font-light">Handcrafted solid Sheesham wood double bed with intricate headboard carvings and hydraulic storage option.</p>
+                        </div>
+                        <div class="pt-4 border-t border-wood-200 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-wood-800 uppercase tracking-wider">Wholesale / Retail</span>
+                            <button onclick="openInquiryModal('Royal Carved Double Bed')" class="bg-wood-900 hover:bg-amberGold-500 hover:text-wood-950 text-wood-100 px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5">
+                                <i class="fa-solid fa-paper-plane"></i> Inquire Price
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="product-card group bg-wood-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-wood-200 flex flex-col" data-category="dining">
+                    <div class="relative h-64 overflow-hidden bg-wood-200">
+                        <img src="https://images.unsplash.com/photo-1615066390971-03e4e1c36ddf?auto=format&fit=crop&q=80&w=700" alt="Solid Wood 6-Seater Dining Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-wood-900/80 backdrop-blur-md text-amberGold-500 px-3 py-1 rounded-lg text-xs font-semibold">Dining Sets</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-serif font-bold text-wood-950">Grand 6-Seater Dining Table</h3>
+                            <p class="text-wood-700 text-sm mt-2 font-light">Elegant premium finish solid wood dining table with 6 cushioned upholstered chairs for family gatherings.</p>
+                        </div>
+                        <div class="pt-4 border-t border-wood-200 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-wood-800 uppercase tracking-wider">Wholesale / Retail</span>
+                            <button onclick="openInquiryModal('Grand 6-Seater Dining Table')" class="bg-wood-900 hover:bg-amberGold-500 hover:text-wood-950 text-wood-100 px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5">
+                                <i class="fa-solid fa-paper-plane"></i> Inquire Price
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="product-card group bg-wood-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-wood-200 flex flex-col" data-category="sofas">
+                    <div class="relative h-64 overflow-hidden bg-wood-200">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=700" alt="Luxury Wooden Sofa Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-wood-900/80 backdrop-blur-md text-amberGold-500 px-3 py-1 rounded-lg text-xs font-semibold">Living Room</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-serif font-bold text-wood-950">Designer Wooden Sofa Set (3+1+1)</h3>
+                            <p class="text-wood-700 text-sm mt-2 font-light">Exquisite carved wooden frame sofa set with high-density foam cushions and premium fabric upholstery.</p>
+                        </div>
+                        <div class="pt-4 border-t border-wood-200 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-wood-800 uppercase tracking-wider">Wholesale / Retail</span>
+                            <button onclick="openInquiryModal('Designer Wooden Sofa Set')" class="bg-wood-900 hover:bg-amberGold-500 hover:text-wood-950 text-wood-100 px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5">
+                                <i class="fa-solid fa-paper-plane"></i> Inquire Price
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="product-card group bg-wood-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-wood-200 flex flex-col" data-category="doors">
+                    <div class="relative h-64 overflow-hidden bg-wood-200">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=700" alt="Architectural Wooden Door Design" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-wood-900/80 backdrop-blur-md text-amberGold-500 px-3 py-1 rounded-lg text-xs font-semibold">Doors & Woodwork</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-serif font-bold text-wood-950">Handcrafted Teak Wood Main Door</h3>
+                            <p class="text-wood-700 text-sm mt-2 font-light">Heavy-duty main entrance door with deep traditional carving, weather-resistant polish, and superior durability.</p>
+                        </div>
+                        <div class="pt-4 border-t border-wood-200 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-wood-800 uppercase tracking-wider">Wholesale / Retail</span>
+                            <button onclick="openInquiryModal('Handcrafted Teak Wood Main Door')" class="bg-wood-900 hover:bg-amberGold-500 hover:text-wood-950 text-wood-100 px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5">
+                                <i class="fa-solid fa-paper-plane"></i> Inquire Price
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="product-card group bg-wood-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-wood-200 flex flex-col" data-category="beds">
+                    <div class="relative h-64 overflow-hidden bg-wood-200">
+                        <img src="https://images.unsplash.com/photo-1540518614846-7ede433c4ef0?auto=format&fit=crop&q=80&w=700" alt="Modern Minimalist Wooden Bed" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-wood-900/80 backdrop-blur-md text-amberGold-500 px-3 py-1 rounded-lg text-xs font-semibold">Beds & Bedroom</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-serif font-bold text-wood-950">Minimalist Queen Size Bed</h3>
+                            <p class="text-wood-700 text-sm mt-2 font-light">Sleek contemporary design clean-lined wooden bed with built-in side tables and sturdy slat support.</p>
+                        </div>
+                        <div class="pt-4 border-t border-wood-200 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-wood-800 uppercase tracking-wider">Wholesale / Retail</span>
+                            <button onclick="openInquiryModal('Minimalist Queen Size Bed')" class="bg-wood-900 hover:bg-amberGold-500 hover:text-wood-950 text-wood-100 px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5">
+                                <i class="fa-solid fa-paper-plane"></i> Inquire Price
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="product-card group bg-wood-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all border border-wood-200 flex flex-col" data-category="sofas">
+                    <div class="relative h-64 overflow-hidden bg-wood-200">
+                        <img src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?auto=format&fit=crop&q=80&w=700" alt="Luxury Lounge Armchair" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-wood-900/80 backdrop-blur-md text-amberGold-500 px-3 py-1 rounded-lg text-xs font-semibold">Living Room</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            <h3 class="text-xl font-serif font-bold text-wood-950">Executive Wooden Lounge Chair</h3>
+                            <p class="text-wood-700 text-sm mt-2 font-light">Ergonomic wooden armchair with plush seating, perfect for living spaces, offices, and reading corners.</p>
+                        </div>
+                        <div class="pt-4 border-t border-wood-200 flex items-center justify-between">
+                            <span class="text-xs font-semibold text-wood-800 uppercase tracking-wider">Wholesale / Retail</span>
+                            <button onclick="openInquiryModal('Executive Wooden Lounge Chair')" class="bg-wood-900 hover:bg-amberGold-500 hover:text-wood-950 text-wood-100 px-4 py-2 rounded-xl text-xs font-semibold transition-all flex items-center gap-1.5">
+                                <i class="fa-solid fa-paper-plane"></i> Inquire Price
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wholesale & B2B Section -->
+    <section id="wholesale" class="py-20 lg:py-28 bg-wood-900 text-wood-100 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <div class="inline-flex items-center gap-2 bg-amberGold-500/20 text-amberGold-500 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider border border-amberGold-500/30">
+                        <i class="fa-solid fa-boxes-stacked"></i> B2B & Bulk Partnership
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight">
+                        Bulk Manufacturing & Wholesale Solutions
+                    </h2>
+                    <p class="text-wood-200 text-base font-light leading-relaxed">
+                        Are you a furniture showroom owner, interior contractor, builder, or hospitality project manager? Partner directly with <span class="font-semibold text-white">Krishna Furniture Udyog</span> for unmatched volume discounts, custom dimension manufacturing, and consistent high-grade timber output.
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                        <div class="flex items-start gap-4 bg-wood-950/50 p-5 rounded-2xl border border-wood-800">
+                            <div class="w-12 h-12 rounded-xl bg-amberGold-500/20 text-amberGold-500 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-truck-ramp-box text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Pan-India Wholesale Supply</h4>
+                                <p class="text-xs text-wood-300 mt-1">Safe logistics and bulk dispatch across states from our Panna manufacturing unit.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4 bg-wood-950/50 p-5 rounded-2xl border border-wood-800">
+                            <div class="w-12 h-12 rounded-xl bg-amberGold-500/20 text-amberGold-500 flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-handshake-angle text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white">Custom & OEM Orders</h4>
+                                <p class="text-xs text-wood-300 mt-1">Manufacturing as per your exact specifications, wood type, and polish preferences.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wholesale Callout Box -->
+                <div class="lg:col-span-5 bg-wood-950 p-8 sm:p-10 rounded-3xl border border-wood-800 shadow-2xl">
+                    <h3 class="text-2xl font-serif font-bold text-white mb-2">Request Wholesale Catalog</h3>
+                    <p class="text-wood-300 text-sm mb-6">Get our complete wholesale price list and catalog directly on WhatsApp or phone.</p>
+                    
+                    <form onsubmit="handleWholesaleSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-wood-300 mb-2">Your Name / Business Name</label>
+                            <input type="text" id="ws-name" required placeholder="e.g. Sharma Furniture Mart" class="w-full bg-wood-900 border border-wood-700 rounded-xl px-4 py-3 text-white placeholder-wood-500 text-sm focus:outline-none focus:border-amberGold-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-wood-300 mb-2">Phone Number</label>
+                            <input type="tel" id="ws-phone" required placeholder="e.g. 9876543210" class="w-full bg-wood-900 border border-wood-700 rounded-xl px-4 py-3 text-white placeholder-wood-500 text-sm focus:outline-none focus:border-amberGold-500">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-wood-300 mb-2">Requirement Details</label>
+                            <textarea id="ws-message" rows="3" placeholder="Mention items required (Beds, Dining, etc.) and estimated quantity..." class="w-full bg-wood-900 border border-wood-700 rounded-xl px-4 py-3 text-white placeholder-wood-500 text-sm focus:outline-none focus:border-amberGold-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-amberGold-500 hover:bg-amberGold-600 text-wood-950 font-bold py-3.5 rounded-xl transition-all shadow-lg flex items-center justify-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Get Wholesale Details via WhatsApp
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="py-20 lg:py-28 bg-wood-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 bg-wood-200 text-wood-800 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                    <i class="fa-solid fa-medal text-amberGold-600"></i> Our Strengths
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-wood-950">
+                    Why Choose Krishna Furniture Udyog?
+                </h2>
+                <p class="text-wood-700 text-base font-light">
+                    We take pride in our uncompromising standards of timber selection, structural integrity, and customer satisfaction.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-wood-50 p-8 rounded-2xl shadow-sm border border-wood-200 hover:shadow-md transition-all space-y-4">
+                    <div class="w-14 h-14 rounded-2xl bg-wood-900 text-amberGold-500 flex items-center justify-center text-2xl shadow-md">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-wood-950">Superior Wood Quality</h3>
+                    <p class="text-wood-700 text-sm font-light leading-relaxed">
+                        Carefully seasoned and treated Sheesham and Teak wood ensuring zero termite risk and lifelong durability.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-wood-50 p-8 rounded-2xl shadow-sm border border-wood-200 hover:shadow-md transition-all space-y-4">
+                    <div class="w-14 h-14 rounded-2xl bg-wood-900 text-amberGold-500 flex items-center justify-center text-2xl shadow-md">
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-wood-950">Direct Manufacturer Pricing</h3>
+                    <p class="text-wood-700 text-sm font-light leading-relaxed">
+                        Eliminate middlemen costs. Get authentic factory wholesale prices for both single items and bulk orders.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-wood-50 p-8 rounded-2xl shadow-sm border border-wood-200 hover:shadow-md transition-all space-y-4">
+                    <div class="w-14 h-14 rounded-2xl bg-wood-900 text-amberGold-500 flex items-center justify-center text-2xl shadow-md">
+                        <i class="fa-solid fa-compass-drafting"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-wood-950">Customization Available</h3>
+                    <p class="text-wood-700 text-sm font-light leading-relaxed">
+                        Custom sizes, custom polish shades (walnut, honey, teak, mahogany), and custom upholstery tailored to your interior.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-wood-50 p-8 rounded-2xl shadow-sm border border-wood-200 hover:shadow-md transition-all space-y-4">
+                    <div class="w-14 h-14 rounded-2xl bg-wood-900 text-amberGold-500 flex items-center justify-center text-2xl shadow-md">
+                        <i class="fa-solid fa-truck-fast"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-wood-950">Wholesale Support & Dispatch</h3>
+                    <p class="text-wood-700 text-sm font-light leading-relaxed">
+                        Reliable packaging, secure transport coordination, and dedicated B2B support across Madhya Pradesh and India.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section id="contact" class="py-20 lg:py-28 bg-wood-50 border-t border-wood-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <div class="inline-flex items-center gap-2 bg-amberGold-500/20 text-amberGold-600 px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider border border-amberGold-500/30">
+                    <i class="fa-solid fa-headset"></i> Get In Touch
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-wood-950">
+                    Visit Our Manufacturing Unit or Connect With Us
+                </h2>
+                <p class="text-wood-700 text-base font-light">
+                    Have questions about bulk orders, custom furniture, or pricing? Reach out to our team instantly.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+                <!-- Contact Info Cards -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="bg-wood-100 p-6 rounded-2xl border border-wood-200 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-wood-900 text-amberGold-500 flex items-center justify-center shrink-0 text-xl">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-wood-950 text-lg">Workshop Address</h4>
+                            <p class="text-wood-700 text-sm mt-1 leading-relaxed">
+                                Krishna Furniture Udyog<br>
+                                Ajaygarh, Panna, Madhya Pradesh, India - 488220
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-wood-100 p-6 rounded-2xl border border-wood-200 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-wood-900 text-amberGold-500 flex items-center justify-center shrink-0 text-xl">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-wood-950 text-lg">Direct Phone / WhatsApp</h4>
+                            <p class="text-wood-700 text-sm mt-1">
+                                <a href="tel:07805995431" class="hover:text-amberGold-600 font-semibold">07805995431</a><br>
+                                <span class="text-xs text-wood-600">Available for calls & WhatsApp inquiries</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-wood-100 p-6 rounded-2xl border border-wood-200 flex items-start gap-4">
+                        <div class="w-12 h-12 rounded-xl bg-wood-900 text-amberGold-500 flex items-center justify-center shrink-0 text-xl">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-wood-950 text-lg">Social Handle</h4>
+                            <p class="text-wood-700 text-sm mt-1">
+                                <a href="https://instagram.com/krishna_furniture_udyog" target="_blank" class="hover:text-amberGold-600 font-semibold">@krishna_furniture_udyog</a><br>
+                                <span class="text-xs text-wood-600">Follow for our latest daily furniture designs</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Google Map Placeholder Card -->
+                <div class="lg:col-span-7 bg-wood-100 rounded-2xl overflow-hidden border border-wood-200 shadow-md flex flex-col">
+                    <div class="p-6 bg-wood-900 text-wood-100 flex justify-between items-center">
+                        <div>
+                            <h4 class="font-serif font-bold text-lg">Ajaygarh, Panna Location</h4>
+                            <p class="text-xs text-wood-300">Madhya Pradesh - 488220</p>
+                        </div>
+                        <a href="https://maps.google.com/?q=Ajaygarh,Panna,Madhya+Pradesh+488220" target="_blank" class="bg-amberGold-500 hover:bg-amberGold-600 text-wood-950 text-xs font-bold px-4 py-2 rounded-xl transition-all">
+                            <i class="fa-solid fa-map-location-dot mr-1"></i> Open Maps
+                        </a>
+                    </div>
+                    <div class="relative flex-1 min-h-[350px] bg-wood-200 flex items-center justify-center">
+                        <div class="text-center p-6 space-y-3">
+                            <div class="w-16 h-16 rounded-full bg-wood-900 text-amberGold-500 flex items-center justify-center mx-auto text-2xl shadow-xl">
+                                <i class="fa-solid fa-map-pin"></i>
+                            </div>
+                            <h5 class="text-xl font-serif font-bold text-wood-950">Krishna Furniture Udyog</h5>
+                            <p class="text-wood-700 text-sm max-w-sm">Ajaygarh, Panna, Madhya Pradesh 488220</p>
+                            <a href="https://wa.me/917805995431?text=Hello%20Krishna%20Furniture%20Udyog,%20I%20would%20like%20to%20visit%20your%20workshop%20in%20Ajaygarh." target="_blank" class="inline-block bg-wood-900 text-wood-100 px-6 py-2.5 rounded-xl text-xs font-semibold hover:bg-wood-800 transition-all">
+                                <i class="fa-brands fa-whatsapp text-amberGold-500 mr-1.5"></i> Get Directions on WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-wood-950 text-wood-300 pt-16 pb-12 border-t border-wood-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-wood-900 text-amberGold-500 flex items-center justify-center text-lg font-bold border border-amberGold-500/30">
+                        <i class="fa-solid fa-chair"></i>
+                    </div>
+                    <span class="text-xl font-serif font-bold text-white">Krishna Furniture</span>
+                </div>
+                <p class="text-xs text-wood-400 leading-relaxed font-light">
+                    Premier manufacturers and wholesalers of solid wood furniture in Ajaygarh, Panna, MP. Dedicated to craft, quality, and timeless beauty.
+                </p>
+                <div class="flex gap-3 pt-2">
+                    <a href="https://instagram.com/krishna_furniture_udyog" target="_blank" class="w-9 h-9 rounded-xl bg-wood-900 hover:bg-amberGold-500 hover:text-wood-950 text-amberGold-500 flex items-center justify-center transition-all">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/917805995431" target="_blank" class="w-9 h-9 rounded-xl bg-wood-900 hover:bg-amberGold-500 hover:text-wood-950 text-amberGold-500 flex items-center justify-center transition-all">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="tel:07805995431" class="w-9 h-9 rounded-xl bg-wood-900 hover:bg-amberGold-500 hover:text-wood-950 text-amberGold-500 flex items-center justify-center transition-all">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="text-white font-serif font-bold text-base mb-4">Quick Links</h4>
+                <ul class="space-y-2.5 text-xs">
+                    <li><a href="#home" class="hover:text-amberGold-500 transition-colors">Home</a></li>
+                    <li><a href="#about" class="hover:text-amberGold-500 transition-colors">About Us</a></li>
+                    <li><a href="#collections" class="hover:text-amberGold-500 transition-colors">Collections & Products</a></li>
+                    <li><a href="#wholesale" class="hover:text-amberGold-500 transition-colors">Wholesale & B2B</a></li>
+                    <li><a href="#why-us" class="hover:text-amberGold-500 transition-colors">Why Choose Us</a></li>
+                    <li><a href="#contact" class="hover:text-amberGold-500 transition-colors">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-serif font-bold text-base mb-4">Product Collections</h4>
+                <ul class="space-y-2.5 text-xs">
+                    <li><a href="#collections" class="hover:text-amberGold-500 transition-colors">Wooden Beds & Double Beds</a></li>
+                    <li><a href="#collections" class="hover:text-amberGold-500 transition-colors">Solid Wood Dining Tables</a></li>
+                    <li><a href="#collections" class="hover:text-amberGold-500 transition-colors">Luxury Sofas & Living Room</a></li>
+                    <li><a href="#collections" class="hover:text-amberGold-500 transition-colors">Teak Wood Doors & Woodwork</a></li>
+                    <li><a href="#wholesale" class="hover:text-amberGold-500 transition-colors">Custom Furniture Orders</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-serif font-bold text-base mb-4">Contact Info</h4>
+                <ul class="space-y-2.5 text-xs text-wood-400">
+                    <li><i class="fa-solid fa-location-dot text-amberGold-500 mr-2"></i> Ajaygarh, Panna, MP - 488220</li>
+                    <li><i class="fa-solid fa-phone text-amberGold-500 mr-2"></i> 07805995431</li>
+                    <li><i class="fa-brands fa-whatsapp text-amberGold-500 mr-2"></i> +91 78059 95431</li>
+                    <li><i class="fa-brands fa-instagram text-amberGold-500 mr-2"></i> @krishna_furniture_udyog</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 pt-8 border-t border-wood-900 flex flex-col sm:flex-row justify-between items-center text-xs text-wood-500 gap-4">
+            <p>&copy; 2026 Krishna Furniture Udyog. All Rights Reserved. Manufacturers & Wholesalers.</p>
+            <p>Designed with <i class="fa-solid fa-heart text-amberGold-500"></i> for Premium Wooden Craftsmanship</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp & Call Buttons -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <!-- Call Button -->
+        <a href="tel:07805995431" aria-label="Call Us" class="w-14 h-14 bg-wood-900 hover:bg-wood-800 text-amberGold-500 rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 border-2 border-amberGold-500/40">
+            <i class="fa-solid fa-phone text-xl"></i>
+        </a>
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/917805995431?text=Hello%20Krishna%20Furniture%20Udyog,%20I%20saw%20your%20website%20and%20want%20to%20inquire%20about%20furniture." target="_blank" aria-label="Chat on WhatsApp" class="w-14 h-14 bg-green-600 hover:bg-green-700 text-white rounded-full flex items-center justify-center shadow-2xl transition-all hover:scale-110 border-2 border-white/40">
+            <i class="fa-brands fa-whatsapp text-2xl"></i>
+        </a>
+    </div>
+
+    <!-- Inquiry Modal -->
+    <div id="inquiry-modal" class="fixed inset-0 z-50 hidden bg-wood-950/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="bg-wood-100 max-w-md w-full rounded-3xl p-6 sm:p-8 relative border border-wood-300 shadow-2xl animate-fade-in">
+            <button onclick="closeInquiryModal()" class="absolute top-5 right-5 text-wood-700 hover:text-wood-950 text-xl font-bold">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="mb-6">
+                <span class="text-xs uppercase font-semibold text-amberGold-600 tracking-wider">Instant Inquiry</span>
+                <h3 id="modal-product-title" class="text-2xl font-serif font-bold text-wood-950 mt-1">Inquire About Product</h3>
+                <p class="text-xs text-wood-600 mt-1">Connect with us directly on WhatsApp to get best wholesale/retail pricing.</p>
+            </div>
+            <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-wood-800 mb-1.5">Your Name</label>
+                    <input type="text" id="modal-name" required placeholder="Enter your full name" class="w-full bg-white border border-wood-300 rounded-xl px-4 py-3 text-wood-950 text-sm focus:outline-none focus:border-amberGold-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-wood-800 mb-1.5">Phone Number</label>
+                    <input type="tel" id="modal-phone" required placeholder="Enter 10-digit mobile number" class="w-full bg-white border border-wood-300 rounded-xl px-4 py-3 text-wood-950 text-sm focus:outline-none focus:border-amberGold-500">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-wood-800 mb-1.5">Custom Requirement / Questions</label>
+                    <textarea id="modal-msg" rows="3" placeholder="Mention required dimensions, polish color, or quantity..." class="w-full bg-white border border-wood-300 rounded-xl px-4 py-3 text-wood-950 text-sm focus:outline-none focus:border-amberGold-500"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-wood-900 hover:bg-amberGold-500 hover:text-wood-950 text-wood-100 font-bold py-3.5 rounded-xl transition-all shadow-md flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg text-amberGold-500 group-hover:text-wood-950"></i> Send Inquiry on WhatsApp
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu on link click
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Product Filtering
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const productCards = document.querySelectorAll('.product-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button state
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-wood-900', 'text-wood-100', 'shadow-md');
+                    b.classList.add('bg-wood-200', 'text-wood-900');
+                });
+                btn.classList.remove('bg-wood-200', 'text-wood-900');
+                btn.classList.add('bg-wood-900', 'text-wood-100', 'shadow-md');
+
+                const filter = btn.getAttribute('data-filter');
+
+                productCards.forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Inquiry Modal Logic
+        let selectedProduct = '';
+
+        function openInquiryModal(productName) {
+            selectedProduct = productName;
+            document.getElementById('modal-product-title').innerText = 'Inquire: ' + productName;
+            document.getElementById('inquiry-modal').classList.remove('hidden');
+        }
+
+        function closeInquiryModal() {
+            document.getElementById('inquiry-modal').classList.add('hidden');
+        }
+
+        function handleModalSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('modal-name').value;
+            const phone = document.getElementById('modal-phone').value;
+            const msg = document.getElementById('modal-msg').value;
+
+            const text = `Hello Krishna Furniture Udyog,%0A%0A*Product Inquiry:* ${selectedProduct}%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Details:* ${msg}`;
+            window.open(`https://wa.me/917805995431?text=${text}`, '_blank');
+            closeInquiryModal();
+        }
+
+        function handleWholesaleSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('ws-name').value;
+            const phone = document.getElementById('ws-phone').value;
+            const msg = document.getElementById('ws-message').value;
+
+            const text = `Hello Krishna Furniture Udyog,%0A%0A*Wholesale Inquiry:*%0A*Name/Business:* ${name}%0A*Phone:* ${phone}%0A*Requirement:* ${msg}`;
+            window.open(`https://wa.me/917805995431?text=${text}`, '_blank');
+        }
+    </script>
+</body>
+</html>
